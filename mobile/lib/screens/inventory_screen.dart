@@ -23,7 +23,7 @@ class InventoryScreen extends StatelessWidget {
                 final item = game.inventory[i];
                 return Container(
                   padding: const EdgeInsets.all(14),
-                  decoration: BoxDecoration(color: const Color(0xFF171C2D), borderRadius: BorderRadius.circular(18), border: Border.all(color: Color(item.colorValue).withOpacity(.7))),
+                  decoration: BoxDecoration(color: const Color(0xFF171C2D), borderRadius: BorderRadius.circular(18), border: Border.all(color: Color(item.colorValue).withValues(alpha: .7))),
                   child: Column(crossAxisAlignment: CrossAxisAlignment.start, mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
                     Icon(Icons.military_tech, size: 38, color: Color(item.colorValue)),
                     Text(item.weapon, style: const TextStyle(fontWeight: FontWeight.w900)),

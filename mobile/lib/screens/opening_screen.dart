@@ -211,7 +211,7 @@ class _RouletteTile extends StatelessWidget {
       width: 118,
       margin: const EdgeInsets.symmetric(horizontal: 2),
       decoration: BoxDecoration(
-        color: selected ? color.withOpacity(.18) : const Color(0xFF1B2132),
+        color: selected ? color.withValues(alpha: .18) : const Color(0xFF1B2132),
         borderRadius: BorderRadius.circular(13),
         border: Border.all(color: selected ? color : Colors.white10, width: selected ? 2 : 1),
       ),

@@ -46,14 +46,14 @@ class HomeScreen extends StatelessWidget {
                   decoration: BoxDecoration(
                     gradient: LinearGradient(colors: colors, begin: Alignment.topLeft, end: Alignment.bottomRight),
                     borderRadius: BorderRadius.circular(22),
-                    border: Border.all(color: Colors.white.withOpacity(.08)),
+                    border: Border.all(color: Colors.white.withValues(alpha: .08)),
                   ),
                   child: Padding(
                     padding: const EdgeInsets.all(18),
                     child: Row(children: [
                       Container(
                         width: 78, height: 78,
-                        decoration: BoxDecoration(color: Colors.white.withOpacity(.07), borderRadius: BorderRadius.circular(18)),
+                        decoration: BoxDecoration(color: Colors.white.withValues(alpha: .07), borderRadius: BorderRadius.circular(18)),
                         child: const Icon(Icons.inventory_2_rounded, size: 42, color: Color(0xFFB7A8FF)),
                       ),
                       const SizedBox(width: 14),
